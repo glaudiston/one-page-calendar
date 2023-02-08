@@ -1,0 +1,108 @@
+body {
+	font-family: verdana;
+}
+* {
+	box-sizing: border-box;
+}
+.calendar {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+
+.year-block {
+	display: grid;
+	height: 20%;
+	text-align: center;
+	align-items: center;
+}
+.days-of-month-block {
+	border: thin solid gray;
+	display: flex;
+	height: 80%;
+	width: 40%;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.day-number-div {
+	color: gray;
+	height: calc(100% / 7 );
+	width: calc(100% / 5 );
+	text-align: center;
+	align-items: center;
+	display: grid;
+}
+
+.months-block {
+	display: flex;
+	width: 60%;
+	height: 20% ;
+}
+
+.months-in-day-div {
+	padding: .5rem;
+	display: flex;
+	flex-direction: column;
+	min-width: calc(100% / 7);
+	text-align: center;
+	align-items: flex-start;
+	display: grid;
+}
+
+.month-in-day {
+	padding: .5rem;
+}
+
+.week-days-block {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	height: 80%;
+	border-top: thin solid gray;
+	border-right: thin solid gray;
+	border-bottom: thin solid gray;
+}
+
+.week-day-div {
+	color: gray;
+	width: calc(100% / 7);
+	height: calc(100% / 7);
+	text-align: center;
+	align-items: center;
+	display: grid;
+}
+
+.selected-day,.selected-month,.selected-weekday{
+	color: black;
+	background-color: orange;
+	font-weight: bolder;
+}
+
+.line-selected {
+	border-top: thin solid orange;
+	border-bottom: thin solid orange;
+}
+
+.month-in-day {
+	color: gray;
+}
+
+.month-selected {
+	color: black;
+	background-color: orange;
+	font-weight: bolder;
+}
+
+.column-selected {
+	border-left: thin solid orange;
+	border-right: thin solid orange;
+}
+
+.column-selected.line-selected {
+	background-color: orange;
+	color: black;
+	font-weight: bolder;
+}
